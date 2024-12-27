@@ -1,0 +1,11 @@
+<h1>Product Available</h1>
+<ul>
+    {% for product in products %}
+    <li>
+        {{ product.name}} - Rs. {{product.price}}
+        <br>
+        {{product.description}}
+        <a href="{% url 'place_order' %}?product_id={{product.id}}">Order</a>
+    </li>
+    {% endfor %}
+</ul>
