@@ -1,7 +1,4 @@
 
-
-
-
 ### MODELS
 Order:
     product
@@ -13,6 +10,6 @@ Product:
     price
     description
 
-# Creating necessary flows first, then more features if time permits
-place_order:
-    trigger > validate > save > payment > status_update
+To Run:
+1. pip install django
+2.python .\manage.py runserver (in root dir)
